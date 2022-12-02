@@ -3,16 +3,22 @@ description: A new Flutter package project.
 version: 0.1.0
 
 environment:
-  sdk: ">=2.17.6 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=2.18.0 <3.0.0"
+
+isar_version: &isar_version 3.0.5
 
 dependencies:
-  flutter:
-    sdk: flutter
+  dio: ^4.0.6
+
+  isar: *isar_version
+  freezed_annotation: ^2.2.0
+  json_annotation: ^4.7.0
+  riverpod: ^2.1.1
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^2.0.1
-
-flutter:
+  build_runner: ^2.3.2
+  lints: ^2.0.1
+  freezed: ^2.2.1
+  isar_generator: *isar_version
+  json_serializable: ^6.5.4
+  test: ^1.22.0
